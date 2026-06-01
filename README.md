@@ -101,8 +101,17 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Portfolio: GitHub data & environment
 
 - **`npm run build`** runs `prebuild` first, which executes `scripts/fetchGitHub.ts` and writes fresh data to `src/data/github.json`. Set **`GITHUB_TOKEN`** (classic fine-grained PAT with `public_repo` or read-only metadata) on Vercel / CI for higher rate limits; unauthenticated requests are capped at 60/hour per IP.
-- **`VITE_SITE_URL`** — canonical site URL for Open Graph / Twitter meta (default `https://gzmaster.dev` in the Vite plugin).
+- **`VITE_SITE_URL`** — canonical origin for Open Graph, Twitter, JSON-LD, `robots.txt`, and `sitemap.xml` (default `https://gzmaster.dev`).
 - **`VITE_CONTACT_EMAIL`** — optional; when set, the Contact section uses `mailto:` for the primary button. Otherwise it links to RetroDevs.
+- **`VITE_GITHUB_USERNAME`** — optional; used in JSON-LD `sameAs` (default `GZMaster`).
+- **`VITE_TWITTER_HANDLE`** — optional; injects `twitter:site` and `twitter:creator` on build (with or without `@`).
+- **`VITE_GOOGLE_SITE_VERIFICATION`** / **`VITE_BING_SITE_VERIFICATION`** — optional; injects Search Console / Bing Webmaster meta tags on build.
+
+## Search engine optimization (build output)
+
+- **`index.html` is rewritten on each `vite build`**: dynamic `<title>`, meta description (from GitHub bio when present, trimmed to ~158 characters), `author`, `robots`, `theme-color`, canonical URL, `hreflang` (`en` + `x-default`), Open Graph + Twitter tags (including `og:image:alt`), and optional verification / Twitter meta from the env vars above.
+- **JSON-LD** (`WebSite`, `WebPage`, `Person` with `sameAs` for GitHub + RetroDevs) is embedded for rich results.
+- **`dist/robots.txt`** and **`dist/sitemap.xml`** are emitted on build. Submit the sitemap in [Google Search Console](https://search.google.com/search-console) and Bing Webmaster Tools after deploy.
 
 ## License
 
