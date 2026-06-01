@@ -113,6 +113,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - **JSON-LD** (`WebSite`, `WebPage`, `Person` with `sameAs` for GitHub + RetroDevs) is embedded for rich results.
 - **`dist/robots.txt`** and **`dist/sitemap.xml`** are emitted on build. Submit the sitemap in [Google Search Console](https://search.google.com/search-console) and Bing Webmaster Tools after deploy.
 
+## Vercel Web Analytics
+
+- The app mounts [`@vercel/analytics`](https://vercel.com/docs/analytics) via **`@vercel/analytics/react`** (correct for Vite + React; do **not** use `@vercel/analytics/next` unless you migrate to Next.js).
+- In the [Vercel dashboard](https://vercel.com/dashboard), open your project → **Analytics** → enable **Web Analytics**. Deployments on Vercel will then receive page views, visitors, and top paths. Local `npm run dev` typically does not send production data.
+
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).

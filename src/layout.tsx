@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { StoreProvider } from "easy-peasy";
 import { ThemeProvider } from "./components/theme/theme-provider";
 import { Toaster } from "./components/ui/sonner";
@@ -18,6 +19,7 @@ export default function GlobalLayout({
           {children}
         </QueryClientProvider>
         <Toaster />
+        <Analytics />
       </StoreProvider>
     </ThemeProvider>
   );
