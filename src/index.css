@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap");
+@import "@fontsource-variable/inter/index.css";
+@import "@fontsource-variable/jetbrains-mono/index.css";
 
 @tailwind base;
 @tailwind components;
@@ -6,6 +7,16 @@
 
 @layer base {
   :root {
+    --brand: #4a3880;
+    --brand-light: #7b6bc4;
+    --bg: #0a0a0f;
+    /* Slightly darker than --bg for vignettes and “far” depth */
+    --bg-deep: #040408;
+    --bg-card: #111118;
+    --bg-border: #1e1e2e;
+    --text-primary: #f0eff8;
+    --text-muted: #8884a8;
+
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
     --card: 0 0% 100%;
@@ -65,10 +76,237 @@
   * {
     @apply border-border;
   }
+
   html {
-    font-family: "Montserrat", system-ui, sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    font-family: "Inter Variable", Inter, system-ui, sans-serif;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply antialiased;
+    background-color: var(--bg-deep);
+    color: var(--text-primary);
+  }
+
+  /*
+   * Portfolio backdrop: stacked static layers (no animation) for spatial depth —
+   * overhead glow, lateral washes, floor shadow, vignette, dual-scale dot field.
+   */
+  .portfolio-bg {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .portfolio-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
+    background-color: var(--bg-deep);
+    background-image:
+      /* Overhead “light well” */
+      radial-gradient(
+        ellipse 125% 90% at 50% -18%,
+        rgba(74, 56, 128, 0.42) 0%,
+        rgba(26, 18, 48, 0.2) 42%,
+        transparent 68%
+      ),
+      /* Left depth */
+      radial-gradient(
+        ellipse 52% 100% at -5% 48%,
+        rgba(123, 107, 196, 0.09) 0%,
+        transparent 52%
+      ),
+      /* Right depth */
+      radial-gradient(
+        ellipse 48% 95% at 105% 32%,
+        rgba(74, 56, 128, 0.14) 0%,
+        transparent 50%
+      ),
+      /* Ground plane — pulls content forward visually */
+      radial-gradient(
+        ellipse 130% 58% at 50% 108%,
+        rgba(0, 0, 0, 0.62) 0%,
+        rgba(8, 6, 18, 0.28) 42%,
+        transparent 62%
+      ),
+      /* Top / bottom falloff */
+      linear-gradient(
+        180deg,
+        rgba(2, 2, 6, 0.88) 0%,
+        transparent 16%,
+        transparent 74%,
+        rgba(1, 1, 5, 0.92) 100%
+      ),
+      /* Near-field dot lattice */
+      radial-gradient(
+        circle at center,
+        rgba(140, 124, 210, 0.14) 1px,
+        transparent 1.05px
+      ),
+      /* Far-field coarser grid (offset = parallax-like separation without motion) */
+      radial-gradient(
+        circle at center,
+        rgba(90, 78, 150, 0.075) 1.1px,
+        transparent 1.15px
+      );
+    background-size:
+      auto,
+      auto,
+      auto,
+      auto,
+      auto,
+      20px 20px,
+      40px 40px;
+    background-position:
+      center,
+      center,
+      center,
+      center,
+      center,
+      0 0,
+      10px 16px;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      repeat, repeat;
+  }
+
+  /* Soft horizon lines + edge darkening — sits above ::before, still non-interactive */
+  .portfolio-bg::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+      repeating-linear-gradient(
+        180deg,
+        transparent 0,
+        transparent 112px,
+        rgba(123, 107, 196, 0.045) 112px,
+        rgba(123, 107, 196, 0.045) 113px
+      ),
+      radial-gradient(
+        ellipse 72% 58% at 50% 50%,
+        transparent 22%,
+        rgba(0, 0, 0, 0.35) 100%
+      );
+    background-repeat: repeat, no-repeat;
+    opacity: 0.95;
+  }
+
+  @media (prefers-reduced-data: reduce) {
+    .portfolio-bg::before {
+      background-image:
+        radial-gradient(
+          ellipse 125% 90% at 50% -18%,
+          rgba(74, 56, 128, 0.35) 0%,
+          transparent 65%
+        ),
+        radial-gradient(
+          ellipse 130% 58% at 50% 108%,
+          rgba(0, 0, 0, 0.55) 0%,
+          transparent 62%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(2, 2, 6, 0.85) 0%,
+          transparent 18%,
+          transparent 78%,
+          rgba(1, 1, 5, 0.9) 100%
+        ),
+        radial-gradient(
+          circle at center,
+          rgba(140, 124, 210, 0.12) 1px,
+          transparent 1.05px
+        );
+      background-size: auto, auto, auto, 24px 24px;
+      background-position: center, center, center, 0 0;
+      background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+    }
+
+    .portfolio-bg::after {
+      opacity: 0.75;
+      background-image: radial-gradient(
+        ellipse 72% 58% at 50% 50%,
+        transparent 28%,
+        rgba(0, 0, 0, 0.4) 100%
+      );
+    }
+  }
+
+  /* WebKit scrollbar — brand accent. */
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--bg-deep);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: var(--brand);
+    border-radius: 999px;
+    border: 2px solid var(--bg-deep);
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: var(--brand-light);
+  }
+}
+
+@layer components {
+  .section-heading {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    font-size: clamp(1.25rem, 1.1rem + 0.5vw, 1.75rem);
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+  }
+
+  .section-heading::before {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--brand), var(--brand-light));
+    flex-shrink: 0;
+  }
+
+  .card-portfolio {
+    background-color: var(--bg-card);
+    border: 1px solid var(--bg-border);
+    border-radius: 0.75rem;
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
+  }
+
+  .card-portfolio:hover {
+    transform: translateY(-4px);
+    border-color: color-mix(in srgb, var(--brand) 55%, transparent);
+    box-shadow:
+      0 0 0 1px color-mix(in srgb, var(--brand) 35%, transparent),
+      0 18px 40px -24px color-mix(in srgb, var(--brand) 45%, transparent);
+    will-change: transform;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card-portfolio {
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card-portfolio:hover {
+      transform: none;
+      will-change: auto;
+    }
   }
 }

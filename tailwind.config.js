@@ -10,6 +10,19 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
+        brand: {
+          DEFAULT: 'var(--brand)',
+          light: 'var(--brand-light)',
+        },
+        surface: {
+          DEFAULT: 'var(--bg)',
+          card: 'var(--bg-card)',
+          border: 'var(--bg-border)',
+        },
+        ink: {
+          DEFAULT: 'var(--text-primary)',
+          muted: 'var(--text-muted)',
+        },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -52,6 +65,18 @@ export default {
         },
       },
       fontFamily: {
+        sans: [
+          'Inter Variable',
+          'Inter',
+          'system-ui',
+          'sans-serif',
+        ],
+        mono: [
+          'JetBrains Mono Variable',
+          'JetBrains Mono',
+          'ui-monospace',
+          'monospace',
+        ],
         heading: ['SUSE', 'system-ui', 'sans-serif'],
         secondary: ['Montserrat', 'system-ui', 'sans-serif'],
       },

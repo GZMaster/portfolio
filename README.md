@@ -98,6 +98,12 @@ This starter includes several custom components to enhance your development expe
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+## Portfolio: GitHub data & environment
+
+- **`npm run build`** runs `prebuild` first, which executes `scripts/fetchGitHub.ts` and writes fresh data to `src/data/github.json`. Set **`GITHUB_TOKEN`** (classic fine-grained PAT with `public_repo` or read-only metadata) on Vercel / CI for higher rate limits; unauthenticated requests are capped at 60/hour per IP.
+- **`VITE_SITE_URL`** — canonical site URL for Open Graph / Twitter meta (default `https://gzmaster.dev` in the Vite plugin).
+- **`VITE_CONTACT_EMAIL`** — optional; when set, the Contact section uses `mailto:` for the primary button. Otherwise it links to RetroDevs.
+
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).

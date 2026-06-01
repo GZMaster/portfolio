@@ -1,0 +1,904 @@
+{
+  "profile": {
+    "name": null,
+    "bio": null,
+    "avatar_url": "https://avatars.githubusercontent.com/u/33158650?v=4",
+    "public_repos": 138,
+    "followers": 22,
+    "following": 16,
+    "updated_at": "2026-05-25T20:06:51Z"
+  },
+  "repos": [
+    {
+      "name": "cpe_election_server",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/cpe_election_server",
+      "language": "JavaScript",
+      "stargazers_count": 2,
+      "topics": [],
+      "updated_at": "2023-07-27T14:05:07Z"
+    },
+    {
+      "name": "cpe_voting_site",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/cpe_voting_site",
+      "language": "SCSS",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-01-25T12:35:29Z"
+    },
+    {
+      "name": "doak-backend",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/doak-backend",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-09-14T15:01:01Z"
+    },
+    {
+      "name": "doak-frontend",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/doak-frontend",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-12-18T15:43:56Z"
+    },
+    {
+      "name": "AI_Chatbot_PCB_Detection",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/AI_Chatbot_PCB_Detection",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-08-17T08:11:03Z"
+    },
+    {
+      "name": "PassDoorProject-asodevsTeam",
+      "description": "the files for our project files",
+      "html_url": "https://github.com/GZMaster/PassDoorProject-asodevsTeam",
+      "language": "C",
+      "stargazers_count": 5,
+      "topics": [],
+      "updated_at": "2022-01-09T18:58:47Z"
+    },
+    {
+      "name": "mendx",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/mendx",
+      "language": "SCSS",
+      "stargazers_count": 2,
+      "topics": [],
+      "updated_at": "2022-11-16T20:28:04Z"
+    },
+    {
+      "name": "rigvidon",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/rigvidon",
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "topics": [],
+      "updated_at": "2024-12-30T14:52:18Z"
+    },
+    {
+      "name": "LeetCodes",
+      "description": "leet Codes solutions",
+      "html_url": "https://github.com/GZMaster/LeetCodes",
+      "language": "Python",
+      "stargazers_count": 1,
+      "topics": [],
+      "updated_at": "2024-01-12T18:51:17Z"
+    },
+    {
+      "name": "zydox",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/zydox",
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "topics": [],
+      "updated_at": "2022-08-31T08:42:08Z"
+    },
+    {
+      "name": "pedagogy",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/pedagogy",
+      "language": "SCSS",
+      "stargazers_count": 1,
+      "topics": [],
+      "updated_at": "2022-08-31T08:42:01Z"
+    },
+    {
+      "name": "Code_Along_with_GZM__JAVA",
+      "description": "Java Tutorial Project",
+      "html_url": "https://github.com/GZMaster/Code_Along_with_GZM__JAVA",
+      "language": "Java",
+      "stargazers_count": 1,
+      "topics": [],
+      "updated_at": "2022-08-13T18:16:07Z"
+    },
+    {
+      "name": "TikTacToe",
+      "description": "A TicTacToe Game",
+      "html_url": "https://github.com/GZMaster/TikTacToe",
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "topics": [],
+      "updated_at": "2022-07-04T11:21:08Z"
+    },
+    {
+      "name": "robofriends_gzm",
+      "description": "RoboFriends Little app to generate Robot Profiles",
+      "html_url": "https://github.com/GZMaster/robofriends_gzm",
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "topics": [],
+      "updated_at": "2022-07-04T11:21:07Z"
+    },
+    {
+      "name": "focustime",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/focustime",
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "topics": [],
+      "updated_at": "2022-07-04T11:21:06Z"
+    },
+    {
+      "name": "MealsToGo",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/MealsToGo",
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "topics": [],
+      "updated_at": "2022-07-04T11:21:05Z"
+    },
+    {
+      "name": "portfolio",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/portfolio",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2026-06-01T11:35:02Z"
+    },
+    {
+      "name": "retrodevs-portfolio",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/retrodevs-portfolio",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2026-05-23T23:21:03Z"
+    },
+    {
+      "name": "investment-cal",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/investment-cal",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2026-05-23T23:20:52Z"
+    },
+    {
+      "name": "fasting-tracker",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/fasting-tracker",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2026-05-23T23:20:45Z"
+    },
+    {
+      "name": "adonis-js-starter-template",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/adonis-js-starter-template",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2026-05-21T10:15:53Z"
+    },
+    {
+      "name": "scripts",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/scripts",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2026-05-20T19:19:28Z"
+    },
+    {
+      "name": "store",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/store",
+      "language": "Java",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2026-03-23T21:23:15Z"
+    },
+    {
+      "name": "REST-flask",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/REST-flask",
+      "language": "Python",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2024-09-23T04:53:44Z"
+    },
+    {
+      "name": "resacedemy",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/resacedemy",
+      "language": "SCSS",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2024-07-19T20:16:09Z"
+    },
+    {
+      "name": "edu-ai-vault",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/edu-ai-vault",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2024-07-16T15:02:22Z"
+    },
+    {
+      "name": "retrodev-emailing-service",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/retrodev-emailing-service",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2024-03-02T10:44:21Z"
+    },
+    {
+      "name": "my-app",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/my-app",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2024-02-04T02:10:37Z"
+    },
+    {
+      "name": "CPE519-assignment-frontend",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/CPE519-assignment-frontend",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-12-16T21:11:10Z"
+    },
+    {
+      "name": "synapse",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/synapse",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-11-28T10:10:01Z"
+    },
+    {
+      "name": "CPE519-assignment-server",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/CPE519-assignment-server",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-11-28T08:33:11Z"
+    },
+    {
+      "name": "CPE519_assignment-app",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/CPE519_assignment-app",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-11-28T08:32:23Z"
+    },
+    {
+      "name": "mainstay-apartments",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/mainstay-apartments",
+      "language": "SCSS",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-11-25T21:57:22Z"
+    },
+    {
+      "name": "my_etherscan_graphql",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/my_etherscan_graphql",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-11-21T04:49:06Z"
+    },
+    {
+      "name": "kickstart",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/kickstart",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-11-20T05:06:55Z"
+    },
+    {
+      "name": "bralewood-backend",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/bralewood-backend",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-11-09T05:58:38Z"
+    },
+    {
+      "name": "metaswap",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/metaswap",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-11-08T05:55:27Z"
+    },
+    {
+      "name": "nextjs--image-gallery",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/nextjs--image-gallery",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-11-02T03:04:08Z"
+    },
+    {
+      "name": "driving-license-monitor-app",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/driving-license-monitor-app",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-10-18T01:18:23Z"
+    },
+    {
+      "name": "lottery-react",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/lottery-react",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-10-09T21:59:45Z"
+    },
+    {
+      "name": "lottery",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/lottery",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-10-07T16:18:33Z"
+    },
+    {
+      "name": "inbox-contract",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/inbox-contract",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-10-05T14:06:46Z"
+    },
+    {
+      "name": "charity-ngo",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/charity-ngo",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-09-20T16:11:34Z"
+    },
+    {
+      "name": "intbot-server",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/intbot-server",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-09-17T13:38:27Z"
+    },
+    {
+      "name": "InterviewBot",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/InterviewBot",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-09-14T06:09:13Z"
+    },
+    {
+      "name": "leetcode",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/leetcode",
+      "language": "Python",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-08-09T22:17:32Z"
+    },
+    {
+      "name": "intro_tdd_jest",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/intro_tdd_jest",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-07-09T19:21:29Z"
+    },
+    {
+      "name": "planner-app",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/planner-app",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-06-27T04:31:25Z"
+    },
+    {
+      "name": "stopwatch-app",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/stopwatch-app",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-06-25T09:49:49Z"
+    },
+    {
+      "name": "calculator-app",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/calculator-app",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-06-23T05:16:57Z"
+    },
+    {
+      "name": "foundry-demo",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/foundry-demo",
+      "language": "Solidity",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-06-18T05:00:59Z"
+    },
+    {
+      "name": "multimedia-app",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/multimedia-app",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-06-13T15:14:01Z"
+    },
+    {
+      "name": "kanban-app",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/kanban-app",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-06-11T05:27:14Z"
+    },
+    {
+      "name": "photo-gallery-app",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/photo-gallery-app",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-06-09T06:31:10Z"
+    },
+    {
+      "name": "graphql-app",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/graphql-app",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-06-04T11:45:14Z"
+    },
+    {
+      "name": "DannyGZM-streamlit",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/DannyGZM-streamlit",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-05-16T04:12:10Z"
+    },
+    {
+      "name": "BlogPageProject",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/BlogPageProject",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-05-07T06:37:13Z"
+    },
+    {
+      "name": "benin-technical-college",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/benin-technical-college",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-05-04T00:12:06Z"
+    },
+    {
+      "name": "AVAX-Quest4",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/AVAX-Quest4",
+      "language": null,
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-04-21T07:35:32Z"
+    },
+    {
+      "name": "stackup-hedera",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/stackup-hedera",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-04-07T19:35:36Z"
+    },
+    {
+      "name": "firebase-testapi",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/firebase-testapi",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-04-07T11:48:11Z"
+    },
+    {
+      "name": "Data_DAO_Back-End",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/Data_DAO_Back-End",
+      "language": null,
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-03-31T04:33:33Z"
+    },
+    {
+      "name": "react-login-app",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/react-login-app",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-03-30T22:42:49Z"
+    },
+    {
+      "name": "my-first-dapp-smart-contract",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/my-first-dapp-smart-contract",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-03-30T22:39:30Z"
+    },
+    {
+      "name": "my-first-dapp-frontend",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/my-first-dapp-frontend",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-03-30T22:36:22Z"
+    },
+    {
+      "name": "ml_knn",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/ml_knn",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-03-30T22:33:54Z"
+    },
+    {
+      "name": "infura-filecoin",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/infura-filecoin",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-03-30T22:25:32Z"
+    },
+    {
+      "name": "furniture-app",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/furniture-app",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-03-30T22:22:43Z"
+    },
+    {
+      "name": "blog-app",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/blog-app",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-03-30T22:11:53Z"
+    },
+    {
+      "name": "my_forum_dApp",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/my_forum_dApp",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-03-27T14:12:51Z"
+    },
+    {
+      "name": "Filecoin_Decentralizing_Storage",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/Filecoin_Decentralizing_Storage",
+      "language": null,
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-03-26T20:56:16Z"
+    },
+    {
+      "name": "KotlinBeginng",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/KotlinBeginng",
+      "language": "Kotlin",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-03-23T22:53:43Z"
+    },
+    {
+      "name": "circle-casino",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/circle-casino",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-03-23T15:15:01Z"
+    },
+    {
+      "name": "GZMaster.github.io",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/GZMaster.github.io",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-03-11T18:47:04Z"
+    },
+    {
+      "name": "school-system-template-backend",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/school-system-template-backend",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-03-11T12:57:32Z"
+    },
+    {
+      "name": "intricatedesign",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/intricatedesign",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2023-02-18T01:02:45Z"
+    },
+    {
+      "name": "Theme-Clock",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/Theme-Clock",
+      "language": "CSS",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2022-09-02T17:02:19Z"
+    },
+    {
+      "name": "Movie-App",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/Movie-App",
+      "language": "CSS",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2022-09-01T03:27:28Z"
+    },
+    {
+      "name": "Code_Along",
+      "description": "Teaching Java to Beginner Level Programmers",
+      "html_url": "https://github.com/GZMaster/Code_Along",
+      "language": "Java",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2022-08-18T19:55:15Z"
+    },
+    {
+      "name": "shoppingcart",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/shoppingcart",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2022-04-07T12:13:38Z"
+    },
+    {
+      "name": "alx-zero_day",
+      "description": "I'm now a ALX Student, this is my first repository as a full-stack engineer",
+      "html_url": "https://github.com/GZMaster/alx-zero_day",
+      "language": null,
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2022-03-03T03:04:37Z"
+    },
+    {
+      "name": "alx-pre_course",
+      "description": "This is My Repo for ALx Projects",
+      "html_url": "https://github.com/GZMaster/alx-pre_course",
+      "language": "Shell",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2022-02-21T02:29:16Z"
+    },
+    {
+      "name": "InventoryMangement",
+      "description": "An app that stores data about items for the user",
+      "html_url": "https://github.com/GZMaster/InventoryMangement",
+      "language": "Kotlin",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2022-01-20T10:44:22Z"
+    },
+    {
+      "name": "minesweepersSolver",
+      "description": "my minesweeper python program attempting to solve a minesweeper problem from pattern repetition",
+      "html_url": "https://github.com/GZMaster/minesweepersSolver",
+      "language": "Python",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2022-01-10T16:41:47Z"
+    },
+    {
+      "name": "MyStudiesApp",
+      "description": "My project app for GAD community project",
+      "html_url": "https://github.com/GZMaster/MyStudiesApp",
+      "language": null,
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-11-27T00:56:36Z"
+    },
+    {
+      "name": "GroupPython_Django",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/GroupPython_Django",
+      "language": "CSS",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-10-11T14:27:29Z"
+    },
+    {
+      "name": "Protues-Project",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/Protues-Project",
+      "language": null,
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-10-11T14:21:24Z"
+    },
+    {
+      "name": "Future_Battle_Chess",
+      "description": "my very own original game",
+      "html_url": "https://github.com/GZMaster/Future_Battle_Chess",
+      "language": null,
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-10-03T02:20:44Z"
+    },
+    {
+      "name": "StopwatchApp",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/StopwatchApp",
+      "language": "Java",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-09-11T14:59:16Z"
+    },
+    {
+      "name": "Make-A-Connection",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/Make-A-Connection",
+      "language": "Java",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-09-10T23:41:56Z"
+    },
+    {
+      "name": "result_transcript_system",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/result_transcript_system",
+      "language": "Java",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-09-10T23:40:06Z"
+    },
+    {
+      "name": "Better-Living-in-Objectville",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/Better-Living-in-Objectville",
+      "language": "Java",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-07-13T11:59:25Z"
+    },
+    {
+      "name": "Serious-Polymorphism",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/Serious-Polymorphism",
+      "language": "Java",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-07-09T23:40:10Z"
+    },
+    {
+      "name": "RevisionProject",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/RevisionProject",
+      "language": "Java",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-07-09T23:39:35Z"
+    },
+    {
+      "name": "BasicLoop",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/BasicLoop",
+      "language": "Java",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-07-09T23:25:19Z"
+    },
+    {
+      "name": "A-Very-Graphic-Story",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/A-Very-Graphic-Story",
+      "language": "Java",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-07-09T23:19:17Z"
+    },
+    {
+      "name": "A-Trip-to-Objectville",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/A-Trip-to-Objectville",
+      "language": "Java",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-07-09T23:15:25Z"
+    },
+    {
+      "name": "Using-Java-Library",
+      "description": null,
+      "html_url": "https://github.com/GZMaster/Using-Java-Library",
+      "language": "Java",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-07-09T23:12:47Z"
+    },
+    {
+      "name": "Numbers-Matter",
+      "description": "A Java simple project",
+      "html_url": "https://github.com/GZMaster/Numbers-Matter",
+      "language": "Java",
+      "stargazers_count": 0,
+      "topics": [],
+      "updated_at": "2021-07-03T11:45:00Z"
+    }
+  ]
+}
