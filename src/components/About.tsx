@@ -1,8 +1,10 @@
 import githubData from "@/data/github.json";
+import { resume } from "@/data/resume";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { StatCard } from "@/components/ui/StatCard";
 import { formatRelativeUpdated, getLatestRepoActivityIso } from "@/lib/utils";
 import type { GitHubData } from "@/types/github";
+import { Mail, MapPin } from "lucide-react";
 
 const data = githubData as GitHubData;
 
@@ -17,9 +19,9 @@ export function About() {
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-start">
         <div className="space-y-6 text-lg text-ink-muted leading-relaxed">
           <p className="text-ink text-xl font-medium tracking-tight">
-            I build products end-to-end — from APIs and dashboards to ML
-            prototypes and hardware-adjacent tooling.
+            I&apos;m {resume.fullName} — {resume.headline}
           </p>
+          <p>{resume.summary}</p>
           <p>
             As founder of{" "}
             <a
@@ -30,15 +32,30 @@ export function About() {
             >
               RetroDevs
             </a>
-            , I ship pragmatic software for clients who care about reliability,
-            clarity, and speed. My public GitHub is a playground of voting
-            systems, full-stack apps, and applied AI experiments.
+            , I led client deliveries across e-commerce, healthcare, and logistics
+            before my current full-stack role at Golive. My public GitHub (
+            <span className="font-mono text-ink-muted/90">{resume.handle}</span>
+            ) is where voting systems, product experiments, and AI tooling live in
+            the open.
           </p>
           <p>
-            Whether it is election infrastructure, product UI, or a PCB-aware
-            chatbot pipeline, I gravitate toward problems that sit at the
-            intersection of software, data, and the physical world.
+            Whether it is multi-tenant SaaS, mobile parity with React Native, or
+            applied AI prototypes, I care about systems that stay understandable as
+            they grow.
           </p>
+          <div className="flex flex-col gap-2 text-sm text-ink-muted pt-2 border-t border-surface-border/80">
+            <span className="inline-flex items-center gap-2">
+              <MapPin className="size-4 text-brand-light shrink-0" aria-hidden />
+              {resume.location}
+            </span>
+            <a
+              href={`mailto:${resume.email}`}
+              className="inline-flex items-center gap-2 hover:text-brand-light transition-colors w-fit"
+            >
+              <Mail className="size-4 text-brand-light shrink-0" aria-hidden />
+              {resume.email}
+            </a>
+          </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <StatCard

@@ -106,8 +106,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - **`VITE_GITHUB_USERNAME`** — optional; used in JSON-LD `sameAs` (default `GZMaster`).
 - **`VITE_TWITTER_HANDLE`** — optional; injects `twitter:site` and `twitter:creator` on build (with or without `@`).
 - **`VITE_GOOGLE_SITE_VERIFICATION`** / **`VITE_BING_SITE_VERIFICATION`** — optional; injects Search Console / Bing Webmaster meta tags on build.
+- **Résumé (PDF)** — keep [`public/daniel-ohiosumua-resume.pdf`](public/daniel-ohiosumua-resume.pdf) in sync with your latest CV (same file the site offers for download). Structured copy for the UI and SEO lives in [`src/data/resume.ts`](src/data/resume.ts) — update names, dates, bullets, and `projectLinks` when your experience changes.
 
-## Search engine optimization (build output)
 
 - **`index.html` is rewritten on each `vite build`**: dynamic `<title>`, meta description (from GitHub bio when present, trimmed to ~158 characters), `author`, `robots`, `theme-color`, canonical URL, `hreflang` (`en` + `x-default`), Open Graph + Twitter tags (including `og:image:alt`), and optional verification / Twitter meta from the env vars above.
 - **JSON-LD** (`WebSite`, `WebPage`, `Person` with `sameAs` for GitHub + RetroDevs) is embedded for rich results.

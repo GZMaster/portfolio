@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { Plugin } from "vite";
 import { loadEnv } from "vite";
+import { resume } from "./src/data/resume";
 
 /** Project root (this file lives next to `vite.config.ts`). */
 const DIR = path.dirname(fileURLToPath(import.meta.url));
@@ -63,11 +64,13 @@ function isoDateForSitemap(iso: string): string {
 function buildJsonLd(params: {
   siteUrl: string;
   displayName: string;
+  alternateName: string;
   description: string;
   image: string;
-  githubUrl: string;
+  sameAs: string[];
 }): string {
-  const { siteUrl, displayName, description, image, githubUrl } = params;
+  const { siteUrl, displayName, alternateName, description, image, sameAs } =
+    params;
   const graph = {
     "@context": "https://schema.org",
     "@graph": [
@@ -94,9 +97,10 @@ function buildJsonLd(params: {
         "@type": "Person",
         "@id": `${siteUrl}/#person`,
         name: displayName,
+        alternateName,
         url: siteUrl,
         image: { "@type": "ImageObject", url: image },
-        sameAs: [githubUrl, "https://www.retrodevs.com"],
+        sameAs,
         jobTitle: "Full-stack developer",
         worksFor: {
           "@type": "Organization",
@@ -145,9 +149,10 @@ export function portfolioSeoPlugin(mode: string): Plugin {
     transformIndexHtml(html: string) {
       const data = readGithubData();
       const p = data.profile;
-      const displayName = p.name?.trim() || githubUsername;
+      const displayName = resume.fullName;
       const baseBio =
         p.bio?.trim() ||
+        resume.summary ||
         "Full-stack developer, AI engineer, and founder of RetroDevs — shipping web apps, AI integrations, and open source.";
       const descriptionPlain = trimForMetaDescription(baseBio, 158);
       const description = escapeHtmlAttr(descriptionPlain);
@@ -163,9 +168,15 @@ export function portfolioSeoPlugin(mode: string): Plugin {
       const jsonLd = buildJsonLd({
         siteUrl,
         displayName,
+        alternateName: resume.handle,
         description: trimForMetaDescription(baseBio, 300),
         image,
-        githubUrl,
+        sameAs: [
+          githubUrl,
+          resume.linkedinUrl,
+          resume.instagramUrl,
+          "https://www.retrodevs.com",
+        ],
       });
 
       return html

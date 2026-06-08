@@ -1,9 +1,11 @@
 import githubData from "@/data/github.json";
+import { resume } from "@/data/resume";
 import { TypewriterText } from "@/components/ui/TypewriterText";
 import { cn } from "@/lib/utils";
 import type { GitHubData } from "@/types/github";
+import { track } from "@vercel/analytics";
 import { motion, useReducedMotion } from "framer-motion";
-import { Github, Globe } from "lucide-react";
+import { Download, Github, Globe, Instagram, Linkedin } from "lucide-react";
 
 const data = githubData as GitHubData;
 
@@ -32,12 +34,18 @@ const heroItemReduced = {
 export function Hero() {
   const { profile } = data;
   const shouldReduceMotion = useReducedMotion();
-  const displayName = profile.name?.trim() || "GZMaster";
+  const displayName = resume.fullName;
   const heading = `Hi, I'm ${displayName}`;
   const itemVariants = shouldReduceMotion ? heroItemReduced : heroItem;
 
   function scrollToProjects() {
     document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function scrollToExperience() {
+    document
+      .getElementById("experience")
+      ?.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
@@ -83,6 +91,14 @@ export function Hero() {
           {heading}
         </motion.h1>
 
+        <motion.p
+          variants={itemVariants}
+          className="text-ink-muted text-sm sm:text-base max-w-xl -mt-4"
+        >
+          Also building in public as{" "}
+          <span className="text-ink font-mono">{resume.handle}</span> on GitHub.
+        </motion.p>
+
         <motion.div variants={itemVariants} className="max-w-xl">
           <TypewriterText
             phrases={[
@@ -94,11 +110,19 @@ export function Hero() {
           />
         </motion.div>
 
+        <motion.p
+          variants={itemVariants}
+          className="text-ink-muted max-w-2xl text-base md:text-lg leading-relaxed"
+        >
+          {resume.headline}
+        </motion.p>
+
         {profile.bio ? (
           <motion.p
             variants={itemVariants}
-            className="text-ink-muted max-w-2xl text-base md:text-lg leading-relaxed"
+            className="text-ink-muted/90 max-w-2xl text-sm md:text-base leading-relaxed border border-surface-border/80 rounded-2xl px-4 py-3 bg-surface-card/40"
           >
+            <span className="text-ink-muted font-medium">GitHub bio: </span>
             {profile.bio}
           </motion.p>
         ) : null}
@@ -118,6 +142,17 @@ export function Hero() {
           >
             View My Work
           </button>
+          <button
+            type="button"
+            onClick={scrollToExperience}
+            className={cn(
+              "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold",
+              "border border-surface-border bg-surface-card/80 text-ink hover:border-brand-light/60",
+              "transition-colors",
+            )}
+          >
+            Experience
+          </button>
           <a
             href="https://www.retrodevs.com"
             target="_blank"
@@ -130,12 +165,46 @@ export function Hero() {
           >
             Hire Me via RetroDevs
           </a>
+          <a
+            href={resume.publicResumePath}
+            download={resume.downloadFileName}
+            onClick={() => {
+              track("resume_download", { location: "hero" });
+            }}
+            className={cn(
+              "inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold",
+              "border border-brand/40 text-brand-light hover:bg-brand/15 transition-colors",
+            )}
+          >
+            <Download className="size-4 shrink-0" aria-hidden />
+            Download résumé
+          </a>
         </motion.div>
 
         <motion.div
           variants={itemVariants}
-          className="flex items-center gap-4 pt-2"
+          className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 pt-2"
         >
+          <a
+            href={resume.linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-ink-muted hover:text-brand-light transition-colors"
+            aria-label="Daniel on LinkedIn"
+          >
+            <Linkedin className="size-5" />
+            LinkedIn
+          </a>
+          <a
+            href={resume.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-ink-muted hover:text-brand-light transition-colors"
+            aria-label="Daniel on Instagram"
+          >
+            <Instagram className="size-5" />
+            Instagram
+          </a>
           <a
             href="https://github.com/GZMaster"
             target="_blank"
@@ -146,9 +215,6 @@ export function Hero() {
             <Github className="size-5" />
             GitHub
           </a>
-          <span className="text-surface-border" aria-hidden>
-            |
-          </span>
           <a
             href="https://www.retrodevs.com"
             target="_blank"
